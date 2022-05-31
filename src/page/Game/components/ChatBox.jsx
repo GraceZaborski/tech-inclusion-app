@@ -35,7 +35,13 @@ return <p>hiii</p>
 
   return (
     <div class="chatbox">
-      <p>Chatbox here</p>
+      <div style={{backgroundColor: "white", borderRadius: "25px", fontFamily: "Arial, Helvetica, sans-serif", height: "100px"
+ }}>
+   <p style={{paddingTop: "15px", paddingLeft: "5px", fontSize: "20px"}}>Hi there! My name is Emily. Please send me a message if you are having any trouble :)</p>
+      </div>
+      <div style={{backgroundColor: "white", borderRadius: "25px", fontFamily: "Arial, Helvetica, sans-serif", height: "60px",  marginTop: "70px"}}>
+   <p style={{paddingTop: "10px", paddingLeft: "5px", fontSize: "20px"}}>Hi Emily, is there a reason the clickable text is blu...</p>
+      </div>
 </div>
   )
 }
