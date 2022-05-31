@@ -19,7 +19,7 @@ firebase.initializeApp({
 const auth = firebase.auth()
 const firestore = firebase.firestore()
 
-export function ChatRoom() {
+export const ChatBox= () => {
 
     const messagesRef = firestore.collection('messages');
     const query = messagesRef.orderBy('createdAt').limit(25);
@@ -34,12 +34,17 @@ return <p>hiii</p>
 }
 
   return (
-    // <ChatMessage />
-    <p>{messages}</p>
+    <div class="chatbox">
+      <p>Chatbox here</p>
+</div>
+  )
+}
+
+
+// <ChatMessage />
+    // <p>{messages}</p>
     // <>
     // <div>
     //     {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
     // </div>
     // </>
-  )
-}
