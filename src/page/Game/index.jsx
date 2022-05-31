@@ -5,21 +5,21 @@ import "./game-styles.css"
 import CentralBox from './components/CentralBox'
 import Question from './components/Question'
 
-const Game = () => {
+function Game() {
   const [answered, setAnswered] = useState(false)
 
-  const handleAnswer = (answer) => {
-if (answer === "Port Vila") {
+  function handleAnswer () {
   setAnswered(true)
-}
   }
 
   return (
-   <div class="grid-container">
+   <div className="grid-container">
+     <div className="non-chatbox">
     <Question/>
-    <ChatBox/>
     <CentralBox answered={answered}/>
     <AnswerInput onAnswering={handleAnswer}/>
+    </div>
+    <ChatBox/>
     </div>
 )
 }

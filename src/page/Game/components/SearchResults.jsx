@@ -12,9 +12,9 @@ function SearchResults({title, onLinkPressed}) {
     const description = searchResultData[title]
 
   return (
-      <div style={{padding: "10px"}}>
+      <div style={{padding: "10px", "max-width": "100%"}}>
     <ArrowBack sx={{ fontSize: 60 }} onClick={() => onLinkPressed(false, "")}/>
-    <div style={{padding: "50px", fontSize: "25px"}}>
+    <div style={{padding: "50px", fontSize: "25px", lineHeight: "2em"}}>
     <h3>{title}</h3>
     <p>{description}</p>
     </div>

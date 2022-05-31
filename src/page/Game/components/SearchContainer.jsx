@@ -8,7 +8,7 @@ const SearchContainer = ({ onLinkPressed }) => {
     onLinkPressed(result, title);
   };
 
-  const handleSearch = (result) => {
+  function handleSearch(result) {
 setSearch(result)
   }
 

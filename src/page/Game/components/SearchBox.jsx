@@ -1,10 +1,10 @@
 import { TextField, Button } from "@mui/material";
 
-const SearchBox = ({setSearched}) => {
+const SearchBox = ({onSearch}) => {
 
-  const setSearch = (result) => {
+  function setSearch (result) {
 sessionStorage.setItem("searched", result);
-setSearched(result)
+onSearch(result)
   }
 
   return (
