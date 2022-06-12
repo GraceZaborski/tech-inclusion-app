@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import Game from "./page/Game";
 import LogIn from "./page/LogIn";
 import LoginOrSignUp from "./page/LoginOrSignUp";
 import Match from "./page/Match";
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Start />} />
+        <Route path="/game" element={<Game />} />
         <Route path="/start" element={<LoginOrSignUp />} />
         <Route path="/login" element={<LogIn />} />
         <Route path="/signup" element={<SignUp />} />
