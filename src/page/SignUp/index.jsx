@@ -49,7 +49,7 @@ function SignUp() {
                 />
                 <FormControl>
                   <RadioGroup
-                    name="gender"
+                    name="status"
                     value="renee"
                     // onChange={handleInputChange}
                     row
@@ -72,12 +72,14 @@ function SignUp() {
               </Grid>
 
               <Button
+                component={Link}
+                to="/profile"
                 variant="contained"
                 color="primary"
                 type="submit"
-                sx={{ marginLeft: 64.2 }}
+                sx={{ marginLeft: 62 }}
               >
-                Login
+                Sign Up
               </Button>
               <Grid
                 item

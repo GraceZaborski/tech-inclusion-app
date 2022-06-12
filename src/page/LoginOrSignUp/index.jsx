@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom'
-import { AppBar, Toolbar, Button, Card,  Grid, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
+import { AppBar, Toolbar, Button, Card, Grid, Typography } from "@mui/material";
+
 
 function LoginOrSignUp() {
   return (
     <>
-
+      
       <Card
         variant="filled"
         sx={{
@@ -60,6 +61,5 @@ function LoginOrSignUp() {
     </>
   );
 }
-
 
 export default LoginOrSignUp;

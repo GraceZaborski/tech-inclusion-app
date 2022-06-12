@@ -28,7 +28,7 @@ function Usercard({ username, hobbiesList, role, confidence, emoji }) {
                   sx={{ fontWeight: "bold", marginTop: 2 }}
                   as="p"
                 >
-                  Game Username:
+                  Game Alias:
                 </Typography>
                 <Chip label={username} sx={{ bgcolor: "lightblue" }} />
               </>

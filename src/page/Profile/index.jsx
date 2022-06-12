@@ -140,7 +140,7 @@ function Profile() {
           marginBottom={5}
         >
           <Typography variant="h5">
-            How confident are you at this application?
+            How confident are you with using NetLearnr?
           </Typography>
           <Grid container>
             <Grid item container justifyContent="space-between" width="100%">
